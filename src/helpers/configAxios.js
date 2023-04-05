@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const URL = process.env.URL_BACKEND;
-
 const clienteAxios = axios.create({
-  baseURL: URL,
+  baseURL: `${process.env.URL_BACKEND}/api`,
 });
 
 export default clienteAxios;
