@@ -56,7 +56,7 @@ const Login = () => {
         para encontrar tu empleo ideal
       </p>
 
-      {alerta.length ? <Alerta mensaje={alerta} error={error} /> : null}
+      {alerta?.length ? <Alerta mensaje={alerta} error={error} /> : null}
 
       <form
         className="flex flex-col items-center mt-5 w-full gap-5"
