@@ -48,7 +48,7 @@ function App() {
     <BrowserRouter>
       <AuthProvider>
         <Routes>
-          <Route element={<PublicLayout />}>
+          <Route exact path="/auth" element={<PublicLayout />}>
             <Route path="/auth/iniciar-sesion" element={<Login />} />
             <Route path="/auth/crear-cuenta" element={<CrearCuenta />} />
             <Route
@@ -66,7 +66,7 @@ function App() {
             <Route path="/auth/crear-empresa" element={<CrearEmpresa />} />
           </Route>
           //* -------------------------------------
-          <Route path="/" element={<AuthLayout />}>
+          <Route exact path="/" element={<AuthLayout />}>
             <Route index element={<Inicio />} />
             <Route path="/mi-perfil" element={<MiPerfil />} />
             <Route path="/mi-empresa" element={<MiEmpresa />} />
