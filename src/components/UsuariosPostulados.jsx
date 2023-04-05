@@ -74,7 +74,7 @@ const UsuariosPostulados = ({ usuario }) => {
                   <>
                     CV:{" "}
                     <a
-                      href={`http://localhost:5000/${datosUsuario?.cv}`}
+                      href={`https://reactempleos-backend-r0m71aws3-danielplascencia.vercel.app/${datosUsuario?.cv}`}
                       target="_blank"
                       className="font-bold py-2 px-3 border-2 rounded-lg border-none bg-indigo-600 text-white hover:text-indigo-600 hover:bg-white"
                     >
@@ -113,7 +113,7 @@ const UsuariosPostulados = ({ usuario }) => {
         <div className="flex flex-col justify-center items-center w-full">
           {datosUsuario?.foto ? (
             <img
-              src={`http://localhost:5000/${datosUsuario?.foto}`}
+              src={`https://reactempleos-backend-r0m71aws3-danielplascencia.vercel.app/${datosUsuario?.foto}`}
               alt={`Logo - ${datosUsuario?.foto}`}
               className=" border-2 border-blue-600 rounded-lg object-cover movilS:w-44 movilL:w-56 tablet:w-96 desktopL:w-96 movilS:h-44 movilL:h-56 tablet:h-96 desktopL:h-96 "
             />

@@ -37,7 +37,7 @@ const Vacante = () => {
 
         if (respuesta.data?.empresa?.logoEmpresa.length > 0) {
           setRutaLogo(
-            `http://localhost:5000/${respuesta.data.empresa.logoEmpresa}`
+            `https://reactempleos-backend-r0m71aws3-danielplascencia.vercel.app/${respuesta.data.empresa.logoEmpresa}`
           );
           setHayLogo(true);
         } else {

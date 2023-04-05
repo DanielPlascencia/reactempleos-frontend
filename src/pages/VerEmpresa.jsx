@@ -24,7 +24,9 @@ const VerEmpresa = () => {
         );
         setEmpresa(respuesta?.data);
         setMiEmpresa(respuesta.data?.reclutador._id === usuarioLogeado._id);
-        setRutaLogo(`http://localhost:5000/${respuesta.data.logoEmpresa}`);
+        setRutaLogo(
+          `https://reactempleos-backend-r0m71aws3-danielplascencia.vercel.app/${respuesta.data.logoEmpresa}`
+        );
         if (respuesta.data.logoEmpresa?.length === 0) {
           setHayLogo(false);
         } else {

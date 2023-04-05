@@ -10,7 +10,9 @@ const Vacantes = (props) => {
 
   useEffect(() => {
     if (empresa?.logoEmpresa?.length > 0) {
-      setRutaLogo(`http://localhost:5000/${empresa?.logoEmpresa}`);
+      setRutaLogo(
+        `https://reactempleos-backend-r0m71aws3-danielplascencia.vercel.app/${empresa?.logoEmpresa}`
+      );
       setHayLogo(true);
     } else {
       setHayLogo(false);

@@ -97,7 +97,7 @@ const MiEmpresa = () => {
           <div className="flex flex-col justify-center items-center w-full tablet:justify-end">
             {empresa?.logoEmpresa ? (
               <img
-                src={`http://localhost:5000/${empresa?.logoEmpresa}`}
+                src={`https://reactempleos-backend-r0m71aws3-danielplascencia.vercel.app/${empresa?.logoEmpresa}`}
                 alt={`Logo - ${empresa?.logoEmpresa}`}
                 className="border-2 border-blue-600 rounded-lg object-contain movilS:w-44 movilL:w-56 laptop:w-72 desktop:w-80 desktopL:w-96 movilS:h-44 movilL:h-56 laptop:h-72 desktop:h-80 desktopL:h-96"
               />
