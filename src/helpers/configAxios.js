@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const clienteAxios = axios.create({
-  baseURL: `${process.env.URL_BACKEND}`,
+  baseURL: "https://reactempleos-backend-r0m71aws3-danielplascencia.vercel.app",
 });
 
 export default clienteAxios;
